@@ -14,9 +14,11 @@ public class Vehiculo {
     private Motor motor;
     private Llanta llanta;
 
-    public Vehiculo(Motor motor, Llanta llanta) {
+    public Vehiculo(String marca, String modelo, Motor motor, Llanta llanta) {
         this.motor = motor;
         this.llanta = llanta;
+        this.marca = marca;
+        this.modelo = modelo;
     }
     
     public boolean encender(){

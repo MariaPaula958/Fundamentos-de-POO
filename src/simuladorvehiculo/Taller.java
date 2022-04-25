@@ -4,6 +4,7 @@
  */
 package simuladorvehiculo;
 
+import java.io.File;
 import java.util.ArrayList;
 
 /**
@@ -17,10 +18,11 @@ public class Taller {
         this.vehiculos = new ArrayList<>();
     }
     
-    public boolean crearVehiculo(Motor motor, Llanta llanta){
-        
-        return this.vehiculos.add(new Vehiculo(motor, llanta));
+    public boolean crearVehiculo(String marca, String modelo, Motor motor, Llanta llanta){
+        return this.vehiculos.add(new Vehiculo(marca, modelo, motor, llanta));
     }
     
-    
+    public ArrayList<Vehiculo> getVehiculos(){
+        return this.vehiculos;
+    }
 }

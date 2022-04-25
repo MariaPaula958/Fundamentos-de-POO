@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package gui;
-
+import simuladorvehiculo.*;
 /**
  *
  * @author Jhonny
@@ -51,6 +51,11 @@ public class Taller extends javax.swing.JFrame {
 
         bUsarCarro.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         bUsarCarro.setText("Usar carro");
+        bUsarCarro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bUsarCarroActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -103,6 +108,10 @@ public class Taller extends javax.swing.JFrame {
         CrearCarro crear = new CrearCarro(this, true);
         crear.setVisible(true);
     }//GEN-LAST:event_bCrearCarroActionPerformed
+
+    private void bUsarCarroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bUsarCarroActionPerformed
+        
+    }//GEN-LAST:event_bUsarCarroActionPerformed
 
     /**
      * @param args the command line arguments
