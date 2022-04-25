@@ -9,6 +9,15 @@ package simuladorvehiculo;
  * @author Jhonny
  */
 public class Taller {
-    private Motor motor;
-    private Llanta llanta;
+    private Vehiculo vehiculo;
+
+    public Taller(Motor motor, Llanta llanta) {
+        this.vehiculo = new Vehiculo(motor, llanta);
+    }
+    
+    public Vehiculo getVehiculo(){
+        return vehiculo;
+    }
+    
+    
 }
