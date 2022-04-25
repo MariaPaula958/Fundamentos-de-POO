@@ -9,6 +9,8 @@ package simuladorvehiculo;
  * @author Jhonny
  */
 public class Vehiculo {
+    private String marca;
+    private String modelo;
     private Motor motor;
     private Llanta llanta;
 
